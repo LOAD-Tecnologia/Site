@@ -101,8 +101,8 @@
       <section id="services" class="contents-container flex w-full flex-col items-center bg-white">
         <ul class="flex flex-col gap-8 bg-white md:gap-16">
           <li>
-            <article class="max-w-screen-xl grid-cols-1 items-center gap-8 bg-white md:grid md:grid-cols-2 lg:gap-20">
-              <div class="flex items-center justify-center order-1">
+            <article class="max-w-screen-xl grid-cols-1 items-center gap-8 bg-white grid md:grid-cols-2 lg:gap-20">
+              <div class="flex items-center justify-center order-2 md:order-1">
                 <img alt="Imagem de um desenvolvedor de software trabalhando em seu computador"
                      title="Imagem de um desenvolvedor de software trabalhando em seu computador" fetchpriority="high"
                      width="0" height="0" decoding="async" data-nimg="1"
@@ -110,7 +110,7 @@
                      src="assets/images/02.jpeg"
                      style="color: transparent; width: 100%; max-width: 100%; height: auto; object-fit: cover;">
               </div>
-              <div class="order-2 mt-4 md:mt-0">
+              <div class="mt-4 order-1 md:order-2 md:mt-0">
                 <h3 class="mb-6 break-words text-4xl font-extrabold tracking-tight text-gray-900">
                   Sistemas sob medida
                 </h3>
@@ -123,7 +123,7 @@
             </article>
           </li>
           <li>
-            <article class="max-w-screen-xl grid-cols-1 items-center gap-8 bg-white md:grid md:grid-cols-2 lg:gap-20">
+            <article class="max-w-screen-xl grid-cols-1 items-center gap-8 bg-white grid md:grid-cols-2 lg:gap-20">
               <div class="flex items-center justify-center order-2">
                 <img alt="Imagem de um smartphone com um aplicativo sendo executado na tela"
                      title="Imagem de um smartphone com um aplicativo sendo executado na tela" fetchpriority="high"
@@ -132,7 +132,7 @@
                      src="assets/images/03.jpeg"
                      style="color: transparent; width: 100%; max-width: 100%; height: auto; object-fit: cover;">
               </div>
-              <div class="order-1 mt-4 md:mt-0">
+              <div class="mt-4 order-1 md:mt-0">
                 <h3 class="mb-6 break-words text-4xl font-extrabold tracking-tight text-gray-900">
                   Aplicativos para mobile
                 </h3>
@@ -145,8 +145,8 @@
             </article>
           </li>
           <li>
-            <article class="max-w-screen-xl grid-cols-1 items-center gap-8 bg-white md:grid md:grid-cols-2 lg:gap-20">
-              <div class="flex items-center justify-center order-1">
+            <article class="max-w-screen-xl grid-cols-1 items-center gap-8 bg-white grid md:grid-cols-2 lg:gap-20">
+              <div class="flex items-center justify-center order-2 md:order-1">
                 <img alt="Imagem de um laptop exibindo um sistema web responsivo"
                      title="Imagem de um laptop exibindo um sistema web responsivo" fetchpriority="high" width="0"
                      height="0" decoding="async" data-nimg="1"
@@ -154,7 +154,7 @@
                      src="assets/images/04.jpeg"
                      style="color: transparent; width: 100%; max-width: 100%; height: auto; object-fit: cover;">
               </div>
-              <div class="order-2 mt-4 md:mt-0">
+              <div class="mt-4 order-1 md:order-2 md:mt-0">
                 <h3 class="mb-6 break-words text-4xl font-extrabold tracking-tight text-gray-900">
                   Sistemas web modernos
                 </h3>
@@ -183,7 +183,7 @@
             </blockquote>
             <figcaption class="mt-6 flex items-center justify-center gap-[9px]">
               <div class="flex items-center gap-3">
-                <span class="text-center font-medium text-gray-900">Luciandro Netto</span>
+                <span class="text-center font-medium text-gray-900">Anônimo</span>
                 <span class="text-base font-semibold leading-tight">/</span>
                 <span class="text-sm font-normal leading-tight text-gray-500">Cliente satisfeito</span>
               </div>
@@ -332,8 +332,8 @@
               desenvolvimento de aplicativos Android e iOS com Flutter e na criação de sistemas web com Angular.
             </p>
             <div class="flex w-full justify-center">
-              <div class="flex w-full flex-col justify-center gap-3 md:max-w-full md:flex-row md:items-center md:gap-0">
-                <div class="m-1 w-full md:w-fit">
+              <div class="flex w-full justify-center max-w-full flex-row items-center gap-0">
+                <div class="m-1 w-fit">
                   <button type="button"
                           class="w-full inline-flex justify-center items-center text-center rounded-lg focus:outline-none focus:ring-primary-300 disabled:bg-gray-100 disabled:text-gray-300 bg-blue-700 text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 px-6 py-[14px] text-base font-medium"
                           (click)="contactClick()">
@@ -373,17 +373,48 @@
         </div>
       </section>
     </main>
-    <footer class="grid-full-width contents-container flex flex-col gap-5 bg-white">
-      <span class="text-center text-sm text-gray-500">
-        &copy; 2024 LOAD Tecnologia. Todos os direitos reservados.
-      </span>
-      <span class="text-center text-sm text-gray-500">
-        Powered by <a href="https://bookipi.com/" target="_blank" class="font-bold hover:underline">Bookipi</a>
-      </span>
-      <div class="flex items-center justify-center space-x-1">
-        <ul class="flex flex-row items-center justify-center gap-4">
+    <footer class="grid-full-width contents-container flex flex-col gap-4 justify-between bg-white md:flex-row md:gap-0">
+      <div class="flex flex-col gap-4">
+        <h2>Empresa</h2>
+        <ul class="flex flex-col text-sm text-gray-500">
+          <li><span>LOAD Tecnologia &copy; 2024</span></li>
+          <li><span>CNPJ: 43.390.543/0001-75</span></li>
+          <li><span>Estrada Geral Lomba Alta - S/N</span></li>
+          <li><span>Alfredo Wagner - SC</span></li>
+          <li><span>88450-000</span></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h2>Contato</h2>
+        <ul class="flex flex-col gap-2 text-sm text-gray-500">
           <li>
-            <a href="https://instagram.com/dorigonluiz" target="_blank">
+            <a href="https://wa.me/+5548991491615" target="_blank" class="flex flex-row gap-2 items-center text-gray-500">
+              <svg height="20" viewBox="0 0 24 24" width="20" class="fill-gray-500" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              <span>(48) 9 9149-1615</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:luiz@load.tec.br" class="flex flex-row gap-2 items-center text-gray-500">
+              <svg height="20" viewBox="0 0 24 24" width="20" class="fill-gray-500" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <span>{{ 'luiz@load.tec.br' }}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h2>Siga nossas redes sociais</h2>
+        <ul class="flex flex-col gap-2 text-sm text-gray-500">
+          <li>
+            <a href="https://instagram.com/dorigonluiz" target="_blank" class="flex flex-row gap-2 items-center text-gray-500">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_713_34432)">
                   <path d="M10.0055 2.48506C12.4562 2.48506 12.7464 2.49581 13.7102 2.5388C14.6059 2.57821 15.0896 2.72869 15.412 2.85409C15.8384 3.0189 16.1465 3.21954 16.4654 3.53841C16.7878 3.86086 16.9849 4.1654 17.1497 4.59176C17.2751 4.91422 17.4256 5.40148 17.465 6.2936C17.508 7.26097 17.5187 7.55118 17.5187 9.99825C17.5187 12.4489 17.508 12.7391 17.465 13.7029C17.4256 14.5986 17.2751 15.0823 17.1497 15.4047C16.9849 15.8311 16.7842 16.1392 16.4654 16.4581C16.1429 16.7805 15.8384 16.9776 15.412 17.1424C15.0896 17.2678 14.6023 17.4183 13.7102 17.4577C12.7428 17.5007 12.4526 17.5114 10.0055 17.5114C7.55488 17.5114 7.26467 17.5007 6.30089 17.4577C5.40519 17.4183 4.9215 17.2678 4.59905 17.1424C4.17269 16.9776 3.86457 16.777 3.5457 16.4581C3.22324 16.1356 3.02619 15.8311 2.86138 15.4047C2.73598 15.0823 2.5855 14.595 2.54609 13.7029C2.50309 12.7355 2.49235 12.4453 2.49235 9.99825C2.49235 7.54759 2.50309 7.25738 2.54609 6.2936C2.5855 5.3979 2.73598 4.91422 2.86138 4.59176C3.02619 4.1654 3.22683 3.85728 3.5457 3.53841C3.86815 3.21595 4.17269 3.0189 4.59905 2.85409C4.9215 2.72869 5.40877 2.57821 6.30089 2.5388C7.26467 2.49581 7.55488 2.48506 10.0055 2.48506ZM10.0055 0.833374C7.51547 0.833374 7.20376 0.844123 6.22565 0.887116C5.25112 0.93011 4.58113 1.08775 4.00072 1.31347C3.39522 1.54994 2.88287 1.86165 2.37411 2.37399C1.86177 2.88275 1.55006 3.3951 1.3136 3.99701C1.08788 4.58101 0.930232 5.24742 0.887239 6.22195C0.844245 7.20364 0.833496 7.51535 0.833496 10.0054C0.833496 12.4955 0.844245 12.8072 0.887239 13.7853C0.930232 14.7598 1.08788 15.4298 1.3136 16.0102C1.55006 16.6157 1.86177 17.1281 2.37411 17.6368C2.88287 18.1456 3.39522 18.4609 3.99713 18.6938C4.58113 18.9195 5.24754 19.0771 6.22207 19.1201C7.20018 19.1631 7.51189 19.1739 10.002 19.1739C12.492 19.1739 12.8037 19.1631 13.7818 19.1201C14.7564 19.0771 15.4264 18.9195 16.0068 18.6938C16.6087 18.4609 17.121 18.1456 17.6298 17.6368C18.1386 17.1281 18.4538 16.6157 18.6867 16.0138C18.9124 15.4298 19.0701 14.7634 19.1131 13.7889C19.1561 12.8108 19.1668 12.4991 19.1668 10.009C19.1668 7.51893 19.1561 7.20723 19.1131 6.22911C19.0701 5.25458 18.9124 4.58459 18.6867 4.00418C18.461 3.3951 18.1493 2.88275 17.637 2.37399C17.1282 1.86523 16.6159 1.54994 16.0139 1.31706C15.4299 1.09134 14.7635 0.933693 13.789 0.890699C12.8073 0.844123 12.4956 0.833374 10.0055 0.833374Z" fill="#6B7280"></path>
@@ -396,23 +427,23 @@
                   </clipPath>
                 </defs>
               </svg>
-              <span class="sr-only">instagram</span>
+              <span>instagram</span>
             </a>
           </li>
           <li>
-            <a href="https://x.com/LuizOtavio3108" target="_blank">
+            <a href="https://x.com/LuizOtavio3108" target="_blank" class="flex flex-row gap-2 items-center text-gray-500">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.1367 8.62109C19.8398 8.09375 20.4727 7.46094 20.9648 6.72266C20.332 7.00391 19.5938 7.21484 18.8555 7.28516C19.6289 6.82812 20.1914 6.125 20.4727 5.24609C19.7695 5.66797 18.9609 5.98438 18.1523 6.16016C17.4492 5.42188 16.5 5 15.4453 5C13.4062 5 11.7539 6.65234 11.7539 8.69141C11.7539 8.97266 11.7891 9.25391 11.8594 9.53516C8.80078 9.35938 6.05859 7.88281 4.23047 5.66797C3.91406 6.19531 3.73828 6.82812 3.73828 7.53125C3.73828 8.79688 4.37109 9.92188 5.39062 10.5898C4.79297 10.5547 4.19531 10.4141 3.70312 10.1328V10.168C3.70312 11.9609 4.96875 13.4375 6.65625 13.7891C6.375 13.8594 6.02344 13.9297 5.70703 13.9297C5.46094 13.9297 5.25 13.8945 5.00391 13.8594C5.46094 15.3359 6.83203 16.3906 8.44922 16.4258C7.18359 17.4102 5.60156 18.0078 3.87891 18.0078C3.5625 18.0078 3.28125 17.9727 3 17.9375C4.61719 18.9922 6.55078 19.5898 8.66016 19.5898C15.4453 19.5898 19.1367 14 19.1367 9.11328C19.1367 8.9375 19.1367 8.79688 19.1367 8.62109Z" fill="#6B7280"></path>
               </svg>
-              <span class="sr-only">twitter</span>
+              <span>twitter</span>
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com/in/luizotaviodorigon" target="_blank">
+            <a href="https://linkedin.com/in/luizotaviodorigon" target="_blank" class="flex flex-row gap-2 items-center text-gray-500">
               <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 448 512" style="fill: rgb(107, 114, 128);">
                 <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
               </svg>
-              <span class="sr-only">linkedin</span>
+              <span>linkedin</span>
             </a>
           </li>
         </ul>
